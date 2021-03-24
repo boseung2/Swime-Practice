@@ -1,0 +1,59 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/earlyaccess/hanna.css');
+
+* {
+	font-family: 'Noto Sans KR', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	width: 100%;
+}
+
+
+
+.container {
+	max-height: 100vh;
+	overflow: scroll;
+	scroll-snap-type: y mandatory;
+}
+
+.item {
+	border-bottom: 10px solid white;
+	color: white;
+	background: #f107ba;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-size: 6vw;
+	scroll-snap-align: center;
+}
+
+.item:nth-child(odd) {
+	background: #2b2b2b;
+}
+.item:last-child {
+	border: none;
+}
+
+#topmenu {
+	width: 100%;
+}
+
+#joinlogin {
+	text-align: right;
+}
+
+#joinlogin a{
+	background-color : #80ffff;
+	text-align:center;
+	padding: 30px;
+	display:inline-block;
+	font-size: 30px
+	
+}
+

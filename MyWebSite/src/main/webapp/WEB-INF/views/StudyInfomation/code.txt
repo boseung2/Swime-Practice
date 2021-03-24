@@ -1,0 +1,35 @@
+jstl directive
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+jstl if else ---- but this orignal is switch
+    <c:choose>
+        <c:when test=""> << if
+        </c:when>
+        <c:otherwise> << else
+        </c:otherwise>
+    </c:choose>
+
+check login
+
+    <c:set var="login" value="${!empty MEMBERID}"/>
+    <c:set var="redir" value="/LoginForm.jsp?from=${pageContext.request.requestURI}"/>
+
+    <c:if test="${!login}">
+        <c:redirect url="${redir}"/>
+    </c:if>
+
+use el get parameter
+    ${param.from}
+
+use bean
+    <jsp:useBean id="user" scope="request" class="db.User"/>
+
+my joosuk
+    <%-- 메소드 선언부입니다 --%>
+    <%-- end 메소드 --%>
+    <%-- 변수 선언부입니다 --%>
+    <%-- end 변수 --%>
+    <%-- 논리 구현부입니다 --%>
+    <%-- end 논리 --%>
+    <%-- 페이지 본문입니다 --%>
+    <%-- end 본문 --%>

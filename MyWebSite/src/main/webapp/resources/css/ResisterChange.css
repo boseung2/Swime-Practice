@@ -1,0 +1,20 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+* {
+	cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat927.ani),
+	url(https://cur.cursors-4u.net/nature/nat-10/nat927.png), auto !important;
+} /* End https://www.cursors-4u.com */
+.main_body{
+	display: flex;
+	justify-content: center;
+	height: 80vh;
+	align-items: center;
+}
+.main_body table{
+	text-align: center;
+	z-index: 3;
+	color: #fff;
+}
+
+
+

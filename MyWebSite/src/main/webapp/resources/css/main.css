@@ -1,0 +1,171 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/earlyaccess/hanna.css');
+
+* {
+	font-family: 'Noto Sans KR', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: url("https://source.unsplash.com/random/1920x1080") no-repeat center;
+	background-size: cover;
+	z-index: 0;
+}
+body::before {
+	content:"";
+	position: absolute;
+	z-index: 1;
+	top: 0; right: 0; bottom: 0; left: 0;
+	background-color: rgba(0,0,0, .7);
+}
+
+.top {
+	position: relative;
+	z-index: 2;
+}
+.main_body{
+	/*
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80vh;
+	*/
+	color: white;
+	position: relative;
+	z-index: 2;
+	align-content:center;
+	
+	/* 드래그 금지 */
+	-ms-user-select: none;
+	-moz-user-select: -moz-none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	user-select:none;
+}
+
+/* 라벨시작 */
+.label_area label{
+	position:absolute;
+}
+
+/* 라벨끝 */
+
+/* 인풋시작 */
+.input_area{
+	margin-top: 10px;
+	width: 400px;
+	position: relative;
+	margin: auto;
+}
+.input_area input{
+	text-decoration: none;
+	width: 100%;
+	padding: 20px 20px 20px;
+	background-color: transparent;
+	border-radius: 10px;
+	border: none;
+	border-bottom: 2px solid #999;
+	font-size: 18px;
+	color: #fff;
+	outline: none;
+}
+.input_area input:hover,
+.input_area input:focus{
+	border-bottom: 2px solid #fff;
+}
+
+/* 인풋끝 */
+
+/* 버튼시작 */
+.button_area{
+	width: 400px;
+	position: relative;
+	margin: auto;
+}
+.button_area input,
+.button_area button{
+	margin-top: 20px;
+	width: 100%;
+	height: 50px;
+	align-content: center;
+	border-radius: 25px;
+	background-color: #166cea;
+	border: none;
+	color: white;
+	font-size: 25px;
+	outline: none;
+}
+
+.button_area input:hover,
+.button_area button:hover{
+	box-shadow: 0px 0px 15px #ffffff29;
+	background-color: rgb(15, 74, 164);
+	cursor: pointer;
+}
+/* 버튼 end */
+
+#header{
+	text-align:center;
+}
+#header a{
+	font-size: 70px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration:none;
+}
+
+#msg{
+	margin: 30px;
+	text-align: center;
+	color: #999;
+}
+.form{
+	margin-top: 20vh;
+}
+
+.form #forgot{
+	margin-top: 20px;
+	text-align: center;
+}
+
+
+.remember{
+	margin: auto;
+	margin-top: 15px;
+	width: 400px;
+	position: relative;
+}
+.remember input{
+	vertical-align:-5px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border: 0px solid #bcbcbc;
+	cursor: pointer;
+}
+.remember label{
+	-ms-user-select: none;
+	color: #999;
+	margin-left: 10px;
+}
+
+/* 자동완성 바탕 없어지는거 막는거1 */
+input:-webkit-autofill {
+	/*
+	-webkit-box-shadow: 0 0 0 30px transparent inset ;
+	*/
+	-webkit-text-fill-color: #fff;
+	caret-color: white;
+}
+/* 자동완성 바탕 없어지는거 막는거2 */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+	transition: background-color 5000s ease-in-out 0s;
+}
+
+

@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+*{
+	font-size: 30px;
+}
+
+.section1 .main_menubody{
+	background-color: white;
+	height: 15vh;
+}
+
+#menu_top_space{
+	height: 5vh;
+}
+
+.menu{
+	width: 100%;
+}
+.menu_top{
+	
+	margin: 20px;
+}
+.menu_bottom div {
+	display: inline;
+}

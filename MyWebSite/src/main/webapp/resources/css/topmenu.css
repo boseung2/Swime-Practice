@@ -1,0 +1,27 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+
+.top{
+	padding-top: 0px;
+	padding-bottom: 60px;
+	background-color: white;
+}
+.top button{
+	font-size: 30px;
+	width: 200px;
+	height: 60px;
+}
+
+.topMenu{
+	float: left;
+	width: 65%;
+}
+
+.loginbar{
+	text-align:right;
+	float: right;
+	width: 35%;
+}
+
+
